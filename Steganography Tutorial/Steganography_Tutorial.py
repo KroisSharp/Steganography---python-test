@@ -12,7 +12,7 @@ def str2bin(msg):
     binary = bin(int(binascii.hexlify(msg),16))
     return binary[2:]
 
-def bin2str(bin):
+def bin2str(binary):
     msg = binascii.unhexlify('%x' % (int('0b' + binary, 2)))
     return msg
 
